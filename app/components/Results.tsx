@@ -7,7 +7,33 @@ interface ResultProps {
 }
 
 const Results = ({ questionsAnswered, numberOfQuestions }: ResultProps) => {
-  return <div>Results</div>;
+  const correctAnswers = questionsAnswered.correctAnswers;
+  const wrongAnswers = questionsAnswered.questionsAnswered - correctAnswers;
+  const score = (correctAnswers / numberOfQuestions) * 100;
+
+  return (
+    <div className="flex flex-col p-4 max-w-lg mx-auto bg-slate-100 rounded-lg shadow mt-5">
+      <h2 className="mb-5 font-bold text-xl text-center uppercase">Summary</h2>
+      <ul>
+        <li>
+          Correct: <span className="font-semibold">{correctAnswers}</span>
+        </li>
+        <li>
+          Wrong: <span className="font-semibold">{wrongAnswers}</span>
+        </li>
+        <li>
+          Questions answered:{" "}
+          <span className="font-semibold">
+            {questionsAnswered.questionsAnswered}
+          </span>
+        </li>
+        <li>
+          Final Score:{" "}
+          <span className="font-semibold">{score.toFixed(0)}%</span>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Results;

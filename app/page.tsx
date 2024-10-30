@@ -78,7 +78,7 @@ const Home = () => {
         className="rounded-lg font-bold bg-slate-700 text-slate-200 px-4 py-2 px-6 mt-5"
         onClick={handleReset}
       >
-        Reset
+        Restart Quiz
       </button>
       {error && <div className="text-red-500 mt-5">{error}</div>}
       {questions.length > 0 &&
