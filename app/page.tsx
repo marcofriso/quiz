@@ -75,7 +75,7 @@ const Home = () => {
         www.marcofriso.com
       </a>
       <button
-        className="rounded-lg font-bold bg-slate-700 text-slate-200 px-4 py-1 mt-5"
+        className="rounded-lg font-bold bg-slate-700 text-slate-200 px-4 py-2 px-6 mt-5"
         onClick={handleReset}
       >
         Reset

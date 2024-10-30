@@ -1,7 +1,19 @@
+enum QuestionType {
+  Multiple = "multiple",
+  Boolean = "boolean",
+  Text = "text",
+}
+
+enum QuestionDifficulty {
+  Easy = "easy",
+  Medium = "medium",
+  Hard = "hard",
+}
+
 interface Question {
   category: string;
-  type: string;
-  difficulty: string;
+  type: QuestionType;
+  difficulty: QuestionDifficulty;
   question: string;
   correct_answer: string;
   incorrect_answers: string[];
@@ -18,3 +30,4 @@ interface QuestionsAnswered {
 }
 
 export type { Question, QuizData, QuestionsAnswered };
+export { QuestionType, QuestionDifficulty };
