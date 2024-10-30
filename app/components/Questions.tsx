@@ -76,7 +76,7 @@ const Questions = ({ questions, setQuestionsAnswered }: QuestionsProps) => {
   };
 
   return (
-    <div className="flex flex-col p-4 max-w-lg mx-auto bg-slate-100 rounded-lg shadow mt-5">
+    <div className="flex flex-col p-4 sm:w-[32rem] mx-auto bg-slate-100 rounded-lg shadow mt-5">
       <p className="text-lg font-semibold mb-4 text-center">
         {currentQuestionIndex + 1} / {questions.length} Question
       </p>

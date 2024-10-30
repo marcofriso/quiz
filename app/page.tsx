@@ -21,6 +21,7 @@ const Home = () => {
 
   const handleReset = () => {
     setQuestions([]);
+    setQuestionsAnswered(defaultQuestionsAnswered);
   };
 
   const getRandomQuestions = (allQuestions: Question[]): Question[] => {
