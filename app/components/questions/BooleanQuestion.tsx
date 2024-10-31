@@ -14,9 +14,9 @@ const BooleanQuestion = ({
   selectedAnswer,
   onSelectAnswer,
 }: BooleanQuestionProps) => (
-  <div className="border rounded-lg shadow">
+  <div className="rounded-lg shadow">
     <DifficultyBanner difficulty={question.difficulty} />
-    <div className="p-4">
+    <div className="p-4 bg-white rounded-b-lg">
       <p className="text-lg font-semibold mb-4">
         {decodeEntities(question.question)}
       </p>

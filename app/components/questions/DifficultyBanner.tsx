@@ -20,8 +20,8 @@ const DifficultyBanner: React.FC<DifficultyBannerProps> = ({ difficulty }) => {
   };
 
   return (
-    <div className={`px-4 py-2 rounded-t ${getBannerColor()}`}>
-      <p className="font-semibold">{difficulty}</p>
+    <div className={`px-4 py-2 rounded-t-lg ${getBannerColor()}`}>
+      <p className="font-semibold capitalize">{difficulty}</p>
     </div>
   );
 };

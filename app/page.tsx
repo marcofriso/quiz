@@ -49,7 +49,6 @@ const Home = () => {
         if (!response.ok) {
           setError("Failed to fetch questions");
         }
-        console.log("Loading questions", response); // TEMPORARY
 
         const data: QuizData = await response.json();
         const randomQuestions = getRandomQuestions(data.results);

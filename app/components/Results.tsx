@@ -12,7 +12,7 @@ const Results = ({ questionsAnswered, numberOfQuestions }: ResultProps) => {
   const score = (correctAnswers / numberOfQuestions) * 100;
 
   return (
-    <div className="flex flex-col p-4 sm:w-[32rem] mx-auto bg-slate-100 rounded-lg shadow mt-5">
+    <div className="flex flex-col p-4 sm:w-[32rem] mx-auto bg-slate-100 rounded-lg shadow mt-6">
       <h2 className="mb-5 font-bold text-xl text-center uppercase">Summary</h2>
       <ul>
         <li>
@@ -22,7 +22,7 @@ const Results = ({ questionsAnswered, numberOfQuestions }: ResultProps) => {
           Wrong: <span className="font-semibold">{wrongAnswers}</span>
         </li>
         <li>
-          Questions answered:{" "}
+          Questions Answered:{" "}
           <span className="font-semibold">
             {questionsAnswered.questionsAnswered}
           </span>
